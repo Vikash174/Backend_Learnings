@@ -10,7 +10,7 @@ const app = express();
 (async () => {
   try {
     await mongoose.connect(
-      `mongodb+srv://raivikash174:vL5HSvYmfL7OiGbR@cluster0.ghllcob.mongodb.net/${DB_NAME}`
+      `mongodb+srv://raivikash174:{password}R@cluster0.ghllcob.mongodb.net/${DB_NAME}`
     );
     app.on("error", (error) => {
       console.log("Not able to connect to db", error);
